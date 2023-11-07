@@ -3,9 +3,37 @@
 COLOR
 ********
 */
+:root {
+  --bg-body: #b9144f;
+}
 
-/* 
-*******
-HEADER
-********
-*/
+body {
+  background-color: var(--bg-body);
+}
+
+input,
+select {
+  border: 1px solid #b9144f;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ad-btn {
+  background-color: gray;
+  border: 1px solid gray;
+  outline: orange;
+  padding: 5px 5px;
+  margin-left: 15px;
+}
+
+label,
+.ad-btn {
+  color: #b9144f;
+  font-weight: 700;
+}
+
+.altezza-table {
+  height: 100px;
+}
