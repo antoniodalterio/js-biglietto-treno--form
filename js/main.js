@@ -3,7 +3,9 @@
 /* MILESTONE 1:
 Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch’essa da scrivere in console. */
 
-const bottoneCalc = document.querySelector('button');
+const bottoneCalc = document.querySelector('#btn-genera');
+const bottoneReset = document.querySelector('#btn-annulla');
+const comparsaCalcolo = document.getElementById('sezione-calcolo');
 
 console.log(bottoneCalc);
 bottoneCalc.addEventListener('click', function () {
@@ -48,4 +50,12 @@ bottoneCalc.addEventListener('click', function () {
 
   const costoBiglietto = document.getElementById('costo-biglietto');
   costoBiglietto.innerHTML = prezzoBiglietto + '€';
+
+  comparsaCalcolo.classList.add('d-block');
+  comparsaCalcolo.classList.remove('d-none');
+});
+
+bottoneReset.addEventListener('click', function () {
+  comparsaCalcolo.classList.remove('d-block');
+  comparsaCalcolo.classList.add('d-none');
 });
